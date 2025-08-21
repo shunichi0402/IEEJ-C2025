@@ -1,0 +1,151 @@
+/* @theme tslab */
+
+@import 'default';
+
+/* 色の定義 */
+:root {
+    --main-color: rgb(25, 81, 155);
+    --main-font-color: rgb(0, 0, 0);
+    --title-font-color: rgb(3, 35, 76);
+}
+
+/* ヘッダーの日付を右寄せ */
+
+header{
+    width: calc(100% - 50px);
+    text-align: right;
+}
+header>div{
+    font-size: 18pt;
+    color: var(--main-font-color);
+}
+
+/* フッターのセンタリング */
+footer {
+    width: 100%;
+    text-align: center;
+    font-size: 18pt;
+    color: var(--main-font-color);
+    margin-bottom: 10px;
+}
+
+/* ページ数のスタイル調整 */
+section::after{
+    font-size: 18pt;
+    color: var(--main-font-color);
+}
+
+/* すべてのページ共通のスタイル */
+section{
+    border-bottom: 15px solid var(--main-color);
+}
+
+section h1{
+    font-size: 36pt;
+    color: var(--title-font-color);
+}
+
+section h2 {
+    font-size: 28pt;
+    color: var(--main-font-color);
+}
+
+section p {
+    font-size: 24pt;
+    color: var(--main-font-color);
+}
+
+section div.center{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+section img.small{
+    object-fit: contain;
+    max-width: 27vw;
+    max-height: 27vh;
+}
+
+section img.midium{
+    object-fit: contain;
+    max-width: 45vw;
+    max-width: 45vh;
+}
+
+section img.large{
+    object-fit: contain;
+    max-width: 80vw;
+    max-height: 80vh;
+}
+
+section div.caption{
+    font-size: 16pt;
+    color: var(--main-font-color);
+    text-align: center;
+    margin-top: 5px;
+    padding-top: 0;
+    font-weight: bold;
+}
+
+/* タイトルページのスタイル */
+section.title>h1 {
+    font-size: 45pt;
+}
+
+section.title>p{
+    font-size: 30pt;
+}
+
+/* section-titleページのスタイル */
+section.section-title>h1 {
+    width: 100%;
+    text-align: center;
+}
+
+section.section-title>ul,
+section.section-title>ol {
+    padding: 0;
+    position: relative;
+}
+
+section.section-title>ul li,
+section.section-title>ol li {
+    color: var(--main-font-color);
+    border-left: solid 6px #999;
+    /*左側の線*/
+    background: #f0f0f0;
+    /*背景色*/
+    margin-bottom: 3px;
+    /*下のバーとの余白*/
+    line-height: 1.5;
+    padding: 5pt 5pt 5pt 15pt;
+    font-size: 24pt;
+    list-style-type: none !important;
+    /*ポチ消す*/
+}
+
+section.section-title>ul li:has(div.selected),
+section.section-title>ol li:has(div.selected) {
+    color: var(--main-font-color);
+    border-left: solid 6px var(--main-color);
+    /*左側の線*/
+    background: #f1f8ff;
+    /*背景色*/
+}
+
+/* 普通のページのスタイル */
+section:not(.title):not(.section-title)>h1{
+    position: absolute;
+    width: calc(100% - 100px);
+    left: 50px;
+    top: 50px;
+    border-bottom: 3px solid var(--main-color);
+    font-size: 36pt;
+}
+
+section:not(.title):not(.section) {
+    padding: 150px 50px 50px 50px;
+    display: flex;
+    justify-content: start;
+}

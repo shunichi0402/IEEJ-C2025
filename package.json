@@ -1,0 +1,18 @@
+{
+  "dependencies": {
+    "@marp-team/marp-cli": "^4.1.2"
+  },
+  "name": "marp-template",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "pdf": "npx marp --pdf main.md --html --allow-local-files --theme-set style.css",
+    "pptx": "npx marp --pptx-editable main.md --html --allow-local-files --theme-set style.css",
+    "html": "npx marp -p main.md --html --allow-local-files --theme-set style.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
