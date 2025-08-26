@@ -122,11 +122,11 @@ _class: section-title
 <div>
 
 ## 従来手法の限界
+- **通常運転**
+→ <span style="color: red;">駅間停車頻発 </span>
 - **単純な早期減速**
 → <span style="color: red;">旅行時間増大</span>
 → <span style="color: red;">遅延回復能力の喪失</span>
-- **通常運転**
-→ <span style="color: red;">駅間停車頻発 </span>
 
 
 </div>

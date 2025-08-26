@@ -97,6 +97,8 @@ section.title>p{
     font-size: 30pt;
 }
 
+
+
 /* section-titleページのスタイル */
 section.section-title>h1 {
     width: 100%;
@@ -123,6 +125,10 @@ section.section-title>ol li {
     font-size: 24pt;
     list-style-type: none !important;
     /*ポチ消す*/
+}
+
+div.selected{
+    font-size: 24pt;
 }
 
 section.section-title>ul li:has(div.selected),
